@@ -33,3 +33,8 @@ mvn spring-boot:run
 ```
 
 In VSCode Install Java Extensions and Spring Extensions and CLick On Play Button
+
+Check Status With Eureka
+```
+http://127.0.0.1:8761/
+```
