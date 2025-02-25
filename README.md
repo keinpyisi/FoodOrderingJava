@@ -23,3 +23,11 @@ Run Service-registry
 Run All Services
 And Last
 Run ApiGateway
+
+
+To Run via Maven
+```
+mvn spring-boot:run
+```
+
+In VSCode Install Java Extensions and Spring Extensions and CLick On Play Button
