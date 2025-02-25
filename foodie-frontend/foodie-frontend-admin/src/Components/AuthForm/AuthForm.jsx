@@ -47,6 +47,27 @@ const AuthForm = () => {
     }
   };
 
+  const onLogin = async () => {
+    try {
+      const response = await axios.post(`${url}/admin/register`, {
+        username: formData.username,
+        email: formData.email,
+        password: formData.password,
+      });
+
+      if (response.status === 200) {
+        setError("");
+        console.log(response.data);
+        setToken(response.data.token);
+        setIsLoggedIn(true);
+      }
+    } catch (error) {
+      setError(
+        error.response?.data?.message || "Login failed. Please try again."
+      );
+    }
+  };
+
   return (
     <div className="auth-container">
       <div className={`container ${isActive ? "active" : ""}`}>
