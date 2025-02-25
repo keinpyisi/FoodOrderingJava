@@ -1,3 +1,5 @@
+JDK22
+
 Every Services Must Have
 ```
 eureka.instance.hostname=localhost
